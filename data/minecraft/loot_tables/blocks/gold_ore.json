@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "minecraft:nether_quartz_ore"
+              "name": "minecraft:gold_ore"
             },
             {
               "type": "minecraft:item",
@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:quartz"
+              "name": "minecraft:raw_gold"
             }
           ]
         }
@@ -52,7 +52,7 @@
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.10
+              "chance": 0.05
             }
           ],
           "children": [
@@ -73,7 +73,7 @@
                   }
                 }
               ],
-              "name": "minecraft:nether_quartz_ore"
+              "name": "minecraft:gold_ore"
             },
             {
               "type": "minecraft:item",
@@ -85,7 +85,7 @@
                   }
                 }
               ],
-              "name": "minecraft:quartz"
+              "name": "minecraft:raw_gold"
             }
           ]
         }
@@ -100,5 +100,5 @@
       }
     }
   ],
-  "random_sequence": "minecraft:blocks/nether_quartz_ore"
+  "random_sequence": "minecraft:blocks/gold_ore"
 }

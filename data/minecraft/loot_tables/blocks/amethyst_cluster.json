@@ -24,21 +24,50 @@
                   }
                 }
               ],
-              "name": "minecraft:nether_quartz_ore"
+              "name": "minecraft:amethyst_cluster"
             },
             {
-              "type": "minecraft:item",
-              "functions": [
+              "type": "minecraft:alternatives",
+              "children": [
                 {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "minecraft:cluster_max_harvestables"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 4.0,
+                      "function": "minecraft:set_count"
+                    },
+                    {
+                      "enchantment": "minecraft:fortune",
+                      "formula": "minecraft:ore_drops",
+                      "function": "minecraft:apply_bonus"
+                    }
+                  ],
+                  "name": "minecraft:amethyst_shard"
                 },
                 {
-                  "function": "minecraft:explosion_decay"
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 2.0,
+                      "function": "minecraft:set_count"
+                    },
+                    {
+                      "function": "minecraft:explosion_decay"
+                    }
+                  ],
+                  "name": "minecraft:amethyst_shard"
                 }
-              ],
-              "name": "minecraft:quartz"
+              ]
             }
           ]
         }
@@ -52,7 +81,7 @@
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.10
+              "chance": 0.06
             }
           ],
           "children": [
@@ -73,7 +102,7 @@
                   }
                 }
               ],
-              "name": "minecraft:nether_quartz_ore"
+              "name": "minecraft:amethyst_cluster"
             },
             {
               "type": "minecraft:item",
@@ -85,7 +114,7 @@
                   }
                 }
               ],
-              "name": "minecraft:quartz"
+              "name": "minecraft:amethyst_shard"
             }
           ]
         }
@@ -100,5 +129,5 @@
       }
     }
   ],
-  "random_sequence": "minecraft:blocks/nether_quartz_ore"
+  "random_sequence": "minecraft:blocks/amethyst_cluster"
 }

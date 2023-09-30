@@ -24,21 +24,33 @@
                   }
                 }
               ],
-              "name": "minecraft:nether_quartz_ore"
+              "name": "minecraft:redstone_ore"
             },
             {
               "type": "minecraft:item",
               "functions": [
                 {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 5.0,
+                    "min": 4.0
+                  },
+                  "function": "minecraft:set_count"
+                },
+                {
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
+                  "formula": "minecraft:uniform_bonus_count",
+                  "function": "minecraft:apply_bonus",
+                  "parameters": {
+                    "bonusMultiplier": 1
+                  }
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:quartz"
+              "name": "minecraft:redstone"
             }
           ]
         }
@@ -52,7 +64,7 @@
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.10
+              "chance": 0.04
             }
           ],
           "children": [
@@ -73,7 +85,7 @@
                   }
                 }
               ],
-              "name": "minecraft:nether_quartz_ore"
+              "name": "minecraft:redstone_ore"
             },
             {
               "type": "minecraft:item",
@@ -85,7 +97,7 @@
                   }
                 }
               ],
-              "name": "minecraft:quartz"
+              "name": "minecraft:redstone"
             }
           ]
         }
@@ -100,5 +112,5 @@
       }
     }
   ],
-  "random_sequence": "minecraft:blocks/nether_quartz_ore"
+  "random_sequence": "minecraft:blocks/redstone_ore"
 }
