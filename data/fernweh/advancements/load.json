@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": []
+      }
+    }
+  },
+  "rewards": {
+    "function": "fernweh:player_load"
+  }
+}
