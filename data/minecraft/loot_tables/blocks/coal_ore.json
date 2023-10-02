@@ -48,53 +48,11 @@
     {
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.09
-            }
-          ],
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "tag": "minecraft:pickaxes"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "minecraft:match_tool",
-                    "predicate": {
-                      "enchantments": [
-                        {
-                          "enchantment": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ],
-              "name": "minecraft:coal"
-            }
-          ]
+          "type": "loot_table",
+          "name": "fernweh:blocks/coal_ore"
         }
       ],
-      "rolls": {
-        "type": "score",
-        "target": {
-          "type": "context",
-          "target": "this"
-        },
-        "score": "fnw.mining_level"
-      }
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/coal_ore"
