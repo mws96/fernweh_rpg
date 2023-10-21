@@ -41,3 +41,33 @@ execute if entity @s[scores={fnw.break_emerald_ore=1..}] run function fernweh:sk
 execute if entity @s[scores={fnw.break_deepslate_emerald_ore=1..}] run function fernweh:skills/mining/exp
 execute if entity @s[scores={fnw.break_diamond_ore=1..}] run function fernweh:skills/mining/exp
 execute if entity @s[scores={fnw.break_deepslate_diamond_ore=1..}] run function fernweh:skills/mining/exp
+
+execute if entity @s[scores={fnw.chop_acacia=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_birch=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_cherry=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_dark_oak=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_jungle=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_mangrove=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_oak=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_spruce=1..}] run function fernweh:skills/lumber/exp
+
+execute if entity @s[scores={fnw.dig_grass=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_dirt=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_gravel=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_sand=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_sus_gravel=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_sus_sand=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_red_sand=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_clay=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_coarse_dirt=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_rooted_dirt=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_soul_sand=1..}] run function fernweh:skills/excavate/exp
+execute if entity @s[scores={fnw.dig_soul_soil=1..}] run function fernweh:skills/excavate/exp
+
+execute if entity @s[scores={fnw.slay_FILL=1..}] run function fernweh:skills/slayer/exp
+
+execute if entity @s[scores={fnw.hunt_FILL=1..}] run function fernweh:skills/hunter/exp
+
+#Anything below this is meh
+
+execute if entity @s[scores={fnw.fish_success=1..}] run function fernweh:skills/fishing/exp

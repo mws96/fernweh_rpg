@@ -50,3 +50,52 @@ scoreboard objectives add fnw.break_emerald_ore minecraft.mined:minecraft.emeral
 scoreboard objectives add fnw.break_deepslate_emerald_ore minecraft.mined:minecraft.deepslate_emerald_ore
 scoreboard objectives add fnw.break_diamond_ore minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add fnw.break_deepslate_diamond_ore minecraft.mined:minecraft.deepslate_diamond_ore
+
+scoreboard objectives add fnw.lumber_xp dummy
+scoreboard objectives add fnw.lumber_level dummy
+scoreboard objectives add fnw.lumber_check dummy
+scoreboard objectives add fnw.lumber_scratch dummy
+
+scoreboard objectives add fnw.chop_acacia minecraft.mined:minecraft.acacia_log
+scoreboard objectives add fnw.chop_birch minecraft.mined:minecraft.birch_log
+scoreboard objectives add fnw.chop_cherry minecraft.mined:minecraft.cherry_log
+scoreboard objectives add fnw.chop_dark_oak minecraft.mined:minecraft.dark_oak_log
+scoreboard objectives add fnw.chop_jungle minecraft.mined:minecraft.jungle_log
+scoreboard objectives add fnw.chop_mangrove minecraft.mined:minecraft.mangrove_log
+scoreboard objectives add fnw.chop_oak minecraft.mined:minecraft.oak_log
+scoreboard objectives add fnw.chop_spruce minecraft.mined:minecraft.spruce_log
+
+scoreboard objectives add fnw.excavate_xp dummy
+scoreboard objectives add fnw.excavate_level dummy
+scoreboard objectives add fnw.excavate_check dummy
+scoreboard objectives add fnw.excavate_scratch dummy
+
+scoreboard objectives add fnw.dig_grass minecraft.mined:minecraft.grass_block
+scoreboard objectives add fnw.dig_dirt minecraft.mined:minecraft.dirt
+scoreboard objectives add fnw.dig_gravel minecraft.mined:minecraft.gravel
+scoreboard objectives add fnw.dig_sand minecraft.mined:minecraft.sand
+scoreboard objectives add fnw.dig_sus_gravel minecraft.mined:minecraft.suspicious_gravel
+scoreboard objectives add fnw.dig_sus_sand minecraft.mined:minecraft.suspicious_sand
+scoreboard objectives add fnw.dig_red_sand minecraft.mined:minecraft.red_sand
+scoreboard objectives add fnw.dig_clay minecraft.mined:minecraft.clay
+scoreboard objectives add fnw.dig_coarse_dirt minecraft.mined:minecraft.coarse_dirt
+scoreboard objectives add fnw.dig_rooted_dirt minecraft.mined:minecraft.rooted_dirt
+scoreboard objectives add fnw.dig_soul_sand minecraft.mined:minecraft.soul_sand
+scoreboard objectives add fnw.dig_soul_soil minecraft.mined:minecraft.soul_soil
+
+scoreboard objectives add fnw.slay_zombie minecraft.killed:minecraft.zombie
+
+scoreboard objectives add fnw.hunt_pig minecraft.killed:minecraft.pig
+
+#Anything below this is meh
+
+scoreboard objectives add fnw.fish_xp dummy
+scoreboard objectives add fnw.fish_level dummy
+scoreboard objectives add fnw.fish_check dummy
+scoreboard objectives add fnw.fish_scratch dummy
+
+scoreboard objectives add fnw.fish_success minecraft.custom:fish_caught
+scoreboard objectives add fnw.fish_rod minecraft.used:minecraft.fishing_rod
+scoreboard objectives add fnw.fish_bucket_cod minecraft.used:minecraft.cod_bucket
+scoreboard objectives add fnw.fish_bucket_tadpole minecraft.used:minecraft.tadpole_bucket
+scoreboard objectives add fnw.fish_bucket_axolotl minecraft.used:minecraft.axolotl_bucket
