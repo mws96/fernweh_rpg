@@ -64,9 +64,9 @@ execute if entity @s[scores={fnw.dig_rooted_dirt=1..}] run function fernweh:skil
 execute if entity @s[scores={fnw.dig_soul_sand=1..}] run function fernweh:skills/excavate/exp
 execute if entity @s[scores={fnw.dig_soul_soil=1..}] run function fernweh:skills/excavate/exp
 
-execute if entity @s[scores={fnw.slay_FILL=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_zombie=1..}] run function fernweh:skills/slayer/exp
 
-execute if entity @s[scores={fnw.hunt_FILL=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_pig=1..}] run function fernweh:skills/hunter/exp
 
 #Anything below this is meh
 
