@@ -132,7 +132,42 @@ scoreboard objectives add fnw.hunter_level dummy
 scoreboard objectives add fnw.hunter_check dummy
 scoreboard objectives add fnw.hunter_scratch dummy
 
+scoreboard objectives add fnw.hunt_allay minecraft.killed:minecraft.allay
+scoreboard objectives add fnw.hunt_axolotl minecraft.killed:minecraft.axolotl
+scoreboard objectives add fnw.hunt_bat minecraft.killed:minecraft.bat
+scoreboard objectives add fnw.hunt_bee minecraft.killed:minecraft.bee
+scoreboard objectives add fnw.hunt_camel minecraft.killed:minecraft.camel
+scoreboard objectives add fnw.hunt_cat minecraft.killed:minecraft.cat
+scoreboard objectives add fnw.hunt_chicken minecraft.killed:minecraft.chicken
+scoreboard objectives add fnw.hunt_cod minecraft.killed:minecraft.cod
+scoreboard objectives add fnw.hunt_cow minecraft.killed:minecraft.cow
+scoreboard objectives add fnw.hunt_donkey minecraft.killed:minecraft.donkey
+scoreboard objectives add fnw.hunt_fox minecraft.killed:minecraft.fox
+scoreboard objectives add fnw.hunt_frog minecraft.killed:minecraft.frog
+scoreboard objectives add fnw.hunt_glow_squid minecraft.killed:minecraft.glow_squid
+scoreboard objectives add fnw.hunt_horse minecraft.killed:minecraft.horse
+scoreboard objectives add fnw.hunt_iron_golem minecraft.killed:minecraft.iron_golem
+scoreboard objectives add fnw.hunt_llama minecraft.killed:minecraft.llama
+scoreboard objectives add fnw.hunt_mooshroom minecraft.killed:minecraft.mooshroom
+scoreboard objectives add fnw.hunt_mule minecraft.killed:minecraft.mule
+scoreboard objectives add fnw.hunt_ocelot minecraft.killed:minecraft.ocelot
+scoreboard objectives add fnw.hunt_parrot minecraft.killed:minecraft.parrot
 scoreboard objectives add fnw.hunt_pig minecraft.killed:minecraft.pig
+scoreboard objectives add fnw.hunt_polar_bear minecraft.killed:minecraft.polar_bear
+scoreboard objectives add fnw.hunt_pufferfish minecraft.killed:minecraft.pufferfish
+scoreboard objectives add fnw.hunt_rabbit minecraft.killed:minecraft.rabbit
+scoreboard objectives add fnw.hunt_salmon minecraft.killed:minecraft.salmon
+scoreboard objectives add fnw.hunt_sheep minecraft.killed:minecraft.sheep
+scoreboard objectives add fnw.hunt_skeleton_horse minecraft.killed:minecraft.skeleton_horse
+scoreboard objectives add fnw.hunt_snow_golem minecraft.killed:minecraft.snow_golem
+scoreboard objectives add fnw.hunt_squid minecraft.killed:minecraft.squid
+scoreboard objectives add fnw.hunt_strider minecraft.killed:minecraft.strider
+scoreboard objectives add fnw.hunt_tadpole minecraft.killed:minecraft.tadpole
+scoreboard objectives add fnw.hunt_trader_llama minecraft.killed:minecraft.trader_llama
+scoreboard objectives add fnw.hunt_tropical_fish minecraft.killed:minecraft.tropical_fish
+scoreboard objectives add fnw.hunt_turtle minecraft.killed:minecraft.turtle
+scoreboard objectives add fnw.hunt_villager minecraft.killed:minecraft.villager
+scoreboard objectives add fnw.hunt_wandering_trader minecraft.killed:minecraft.wandering_trader
 
 #Anything below this is meh
 
@@ -142,7 +177,3 @@ scoreboard objectives add fnw.fish_check dummy
 scoreboard objectives add fnw.fish_scratch dummy
 
 scoreboard objectives add fnw.fish_success minecraft.custom:fish_caught
-scoreboard objectives add fnw.fish_rod minecraft.used:minecraft.fishing_rod
-scoreboard objectives add fnw.fish_bucket_cod minecraft.used:minecraft.cod_bucket
-scoreboard objectives add fnw.fish_bucket_tadpole minecraft.used:minecraft.tadpole_bucket
-scoreboard objectives add fnw.fish_bucket_axolotl minecraft.used:minecraft.axolotl_bucket
