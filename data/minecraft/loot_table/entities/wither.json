@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity",
+  "random_sequence": "minecraft:entities/wither",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "fernweh:entities/wither"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

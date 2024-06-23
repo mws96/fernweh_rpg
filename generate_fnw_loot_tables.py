@@ -45,9 +45,116 @@ dig_blocks = {
   'soul_soil': { 'drop_rate': 0.04 },
 }
 
-def generate_loot_tables(block_map, skill_name, tool_tag):
+hostile_mobs = {
+  'blaze': [
+    { 'drop_rate': 0.04, 'drop_item': 'blaze_rod' }
+  ],
+  'bogged': [
+    { 'drop_rate': 0.03, 'drop_item': 'brown_mushroom' },
+    { 'drop_rate': 0.03, 'drop_item': 'red_mushroom' },
+    { 'drop_rate': 0.005, 'drop_item': 'red_mushroom_block' }
+  ],
+  'breeze': [
+    { 'drop_rate': 0.04, 'drop_item': 'breeze_rod' }
+  ],
+  'cave_spider': [
+    { 'drop_rate': 0.08, 'drop_item': 'cobweb' }
+  ],
+  'creeper': [
+    { 'drop_rate': 0.05, 'drop_item': 'gunpowder' }
+  ],
+  'drowned': [
+    { 'drop_rate': 0.04, 'drop_item': 'rotten_flesh' },
+    { 'drop_rate': 0.006, 'drop_item': 'nautilus_shell' }
+  ],
+  'elder_guardian': [
+    { 'drop_rate': 0.04, 'drop_item': 'sponge' }
+  ],
+  'enderman': [
+    { 'drop_rate': 0.01, 'drop_item': 'ender_chest' }
+  ],
+  'evoker': [
+    { 'drop_rate': 0.05, 'drop_item': 'emerald' }
+  ],
+  'ghast': [
+    { 'drop_rate': 0.05, 'drop_item': 'fire_charge' }
+  ],
+  'guardian': [
+    { 'drop_rate': 0.04, 'drop_item': 'prismarine' }
+  ],
+  'hoglin': [
+    { 'drop_rate': 0.01, 'drop_item': 'gold_block' }
+  ],
+  'husk': [
+    { 'drop_rate': 0.08, 'drop_item': 'sand' }
+  ],
+  'magma_cube': [
+    { 'drop_rate': 0.04, 'drop_item': 'nether_wart' }
+  ],
+  'phantom': [
+    { 'drop_rate': 0.002, 'drop_item': 'elytra' }
+  ],
+  'piglin': [
+    { 'drop_rate': 0.02, 'drop_item': 'minecraft:lava_bucket' }
+  ],
+  'piglin_brute': [
+    { 'drop_rate': 0.02, 'drop_item': 'minecraft:diamond_axe' },
+    { 'drop_rate': 0.001, 'drop_item': 'minecraft:netherite_axe' }
+  ],
+  'pillager': [
+    { 'drop_rate': 0.05, 'drop_item': 'minecraft:firework_rocket' }
+  ],
+  'ravager': [
+    { 'drop_rate': 0.5, 'drop_item': 'minecraft:gravel' }
+  ],
+  'shulker': [
+    { 'drop_rate': 0.05, 'drop_item': 'minecraft:shulker_shell' }
+  ],
+  'silverfish': [
+    { 'drop_rate': 0.01, 'drop_item': 'minecraft:diamond' }
+  ],
+  'skeleton': [
+    { 'drop_rate': 0.1, 'drop_item': 'bone' },
+    { 'drop_rate': 0.005, 'drop_item': 'bone_block' }
+  ],
+  'slime': [
+    { 'drop_rate': 0.01, 'drop_item': 'minecraft:slime_block' }
+  ],
+  'spider': [
+    { 'drop_rate': 0.1, 'drop_item': 'minecraft:spider_eye' }
+  ],
+  'stray': [
+    { 'drop_rate': 0.05, 'drop_item': 'minecraft:lether_boots' }
+  ],
+  'vex': [
+    { 'drop_rate': 0.01, 'drop_item': 'minecraft:jukebox' }
+  ],
+  'vindicator': [
+    { 'drop_rate': 0.01, 'drop_item': 'minecraft:diamond_axe' }
+  ],
+  'witch': [
+    { 'drop_rate': 0.01, 'drop_item': 'minecraft:glowstone_dust' }
+  ],
+  'wither': [
+    { 'drop_rate': 0.01, 'drop_item': 'minecraft:wither_rose' }
+  ],
+  'wither_skeleton': [
+    { 'drop_rate': 0.005, 'drop_item': 'minecraft:wither_skeleton_skull' }
+  ],
+  'warden': [
+    { 'drop_rate': 0.5, 'drop_item': 'minecraft:deepslate' }
+  ],
+  'zoglin': [
+    { 'drop_rate': 0.01, 'drop_item': 'minecraft:golden_apple' }
+  ],
+  'zombie': [
+    { 'drop_rate': 0.07, 'drop_item': 'minecraft:rotten_flesh' }
+  ],
+}
+
+def generate_block_loot_tables(block_map, skill_name, tool_tag):
   """
-  Generates Fernweh loot tables for lumber skill
+  Generates Fernweh loot tables for blocks
   """
   for block in block_map.keys():
     block_info = block_map[block]
@@ -110,8 +217,48 @@ def generate_loot_tables(block_map, skill_name, tool_tag):
     
     with open(f'data/fernweh/loot_table/blocks/{block}.json', 'w') as wp:
       json.dump(custom_table, wp, indent=2)
+
+def generate_entity_loot_tables(entity_map, skill_name):
+  """
+  Generates Fernweh loot tables for entities
+  """
+  for entity in entity_map.keys():
+    custom_table = {
+      "type": "minecraft:entity",
+      "pools": [],
+      "random_sequence": f"minecraft:entities/{entity}"
+    }
+    block_info = entity_map[entity]
+    for drop_map in block_info:
+      drop_rate = drop_map['drop_rate']
+      drop_item = drop_map.get('drop_item', entity)
+      custom_table['pools'].append({
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": drop_rate
+              }
+            ],
+            "name": f"minecraft:{drop_item}"
+          }
+        ],
+        "rolls": {
+          "type": "score",
+          "target": {
+            "type": "context",
+            "target": "attacker"
+          },
+          "score": f"fnw.{skill_name}"
+        }
+      })
+    
+    with open(f'data/fernweh/loot_table/entities/{entity}.json', 'w') as wp:
+      json.dump(custom_table, wp, indent=2)
       
-def override_vanilla_loot_tables(vanilla_path, block_map):
+def override_vanilla_loot_tables(vanilla_path, block_map, object_type):
   """
   Copies the vanilla loot tables
   and inserts entry for custom rolls
@@ -121,25 +268,29 @@ def override_vanilla_loot_tables(vanilla_path, block_map):
       "entries": [
         {
           "type": "loot_table",
-          "value": f"fernweh:blocks/{loot_table}"
+          "value": f"fernweh:{object_type}/{loot_table}"
         }
       ],
       "rolls": 1.0
     }
     
-    with open(f'{vanilla_path}/data/minecraft/loot_table/blocks/{loot_table}.json') as fp:
+    with open(f'{vanilla_path}/data/minecraft/loot_table/{object_type}/{loot_table}.json') as fp:
       json_content = json.load(fp)
+      if 'pools' not in json_content:
+        json_content['pools'] = []
       json_content['pools'].append(custom_entry)
-      with open(f'data/minecraft/loot_table/blocks/{loot_table}.json', 'w') as wp:
+      with open(f'data/minecraft/loot_table/{object_type}/{loot_table}.json', 'w') as wp:
         json.dump(json_content, wp, indent=2)
         
 if __name__ == '__main__':
-  generate_loot_tables(ore_blocks, 'mining_level', 'minecraft:pickaxes')
-  generate_loot_tables(log_blocks, 'lumber_level', 'minecraft:axes')
-  generate_loot_tables(dig_blocks, 'excavate_level', 'minecraft:shovels')
+  generate_block_loot_tables(ore_blocks, 'mining_level', 'minecraft:pickaxes')
+  generate_block_loot_tables(log_blocks, 'lumber_level', 'minecraft:axes')
+  generate_block_loot_tables(dig_blocks, 'excavate_level', 'minecraft:shovels')
+  generate_entity_loot_tables(hostile_mobs, 'slayer_level')
   
   if len(sys.argv) == 2:
-    override_vanilla_loot_tables(sys.argv[1], ore_blocks)
-    override_vanilla_loot_tables(sys.argv[1], log_blocks)
-    override_vanilla_loot_tables(sys.argv[1], dig_blocks)
+    override_vanilla_loot_tables(sys.argv[1], ore_blocks, 'blocks')
+    override_vanilla_loot_tables(sys.argv[1], log_blocks, 'blocks')
+    override_vanilla_loot_tables(sys.argv[1], dig_blocks, 'blocks')
+    override_vanilla_loot_tables(sys.argv[1], hostile_mobs, 'entities')
   

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.04
+            }
+          ],
+          "name": "minecraft:sponge"
+        }
+      ],
+      "rolls": {
+        "type": "score",
+        "target": {
+          "type": "context",
+          "target": "attacker"
+        },
+        "score": "fnw.slayer_level"
+      }
+    }
+  ],
+  "random_sequence": "minecraft:entities/elder_guardian"
+}
