@@ -103,7 +103,42 @@ execute if entity @s[scores={fnw.slay_zombie=1..}] run function fernweh:skills/s
 execute if entity @s[scores={fnw.slay_zombie_villiager=1..}] run function fernweh:skills/slayer/exp
 execute if entity @s[scores={fnw.slay_zombified_piglin=1..}] run function fernweh:skills/slayer/exp
 
+execute if entity @s[scores={fnw.hunt_allay=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_axolotl=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_bat=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_bee=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_camel=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_cat=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_chicken=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_cod=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_cow=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_donkey=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_fox=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_frog=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_glow_squid=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_horse=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_iron_golem=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_llama=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_mooshroom=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_mule=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_ocelot=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_parrot=1..}] run function fernweh:skills/hunter/exp
 execute if entity @s[scores={fnw.hunt_pig=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_polar_bear=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_pufferfish=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_rabbit=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_salmon=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_sheep=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_skeleton_horse=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_snow_golem=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_squid=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_strider=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_tadpole=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_trader_llama=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_tropical_fish=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_turtle=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_villager=1..}] run function fernweh:skills/hunter/exp
+execute if entity @s[scores={fnw.hunt_wandering_trader=1..}] run function fernweh:skills/hunter/exp
 
 #Anything below this is meh
 
