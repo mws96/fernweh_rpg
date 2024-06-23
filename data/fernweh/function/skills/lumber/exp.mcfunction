@@ -4,6 +4,7 @@ scoreboard players add @s[scores={fnw.chop_cherry=1..}] fnw.lumber_xp 1
 scoreboard players add @s[scores={fnw.chop_dark_oak=1..}] fnw.lumber_xp 1
 scoreboard players add @s[scores={fnw.chop_jungle=1..}] fnw.lumber_xp 1
 scoreboard players add @s[scores={fnw.chop_mangrove=1..}] fnw.lumber_xp 1
+scoreboard players add @s[scores={fnw.chop_mangrove=1..}] fnw.lumber_xp 1
 scoreboard players add @s[scores={fnw.chop_oak=1..}] fnw.lumber_xp 1
 scoreboard players add @s[scores={fnw.chop_spruce=1..}] fnw.lumber_xp 1
 
@@ -15,5 +16,6 @@ scoreboard players set @s fnw.chop_cherry 0
 scoreboard players set @s fnw.chop_dark_oak 0
 scoreboard players set @s fnw.chop_jungle 0
 scoreboard players set @s fnw.chop_mangrove 0
+scoreboard players set @s fnw.chop_mangrove_roots 0
 scoreboard players set @s fnw.chop_oak 0
 scoreboard players set @s fnw.chop_spruce 0
