@@ -6,7 +6,7 @@
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": "#minecraft:pickaxes"
+            "items": "#minecraft:shovels"
           }
         },
         {
@@ -34,10 +34,10 @@
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.02
+              "chance": 0.07
             }
           ],
-          "name": "minecraft:emerald"
+          "name": "minecraft:gravel"
         }
       ],
       "rolls": {
@@ -46,9 +46,9 @@
           "type": "context",
           "target": "this"
         },
-        "score": "fnw.mining_level"
+        "score": "fnw.excavate_level"
       }
     }
   ],
-  "random_sequence": "minecraft:blocks/emerald_ore"
+  "random_sequence": "minecraft:blocks/gravel"
 }
