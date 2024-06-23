@@ -48,6 +48,7 @@ execute if entity @s[scores={fnw.chop_cherry=1..}] run function fernweh:skills/l
 execute if entity @s[scores={fnw.chop_dark_oak=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_jungle=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_mangrove=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_mangrove_roots=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_oak=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_spruce=1..}] run function fernweh:skills/lumber/exp
 
@@ -64,7 +65,43 @@ execute if entity @s[scores={fnw.dig_rooted_dirt=1..}] run function fernweh:skil
 execute if entity @s[scores={fnw.dig_soul_sand=1..}] run function fernweh:skills/excavate/exp
 execute if entity @s[scores={fnw.dig_soul_soil=1..}] run function fernweh:skills/excavate/exp
 
+execute if entity @s[scores={fnw.slay_blaze=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_bogged=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_breeze=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_cave_spider=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_creeper=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_drowned=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_elder_guardian=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_enderman=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_endermite=1..}] run function fernweh:skills/slayer/exp
+execute if entity @a[distance=..50, scores={fnw.slay_ender_dragon=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_evoker=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_ghast=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_guardian=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_hoglin=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_husk=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_magma_cube=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_phantom=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_piglin=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_piglin_brute=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_pillager=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_ravager=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_shulker=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_silverfish=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_skeleton=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_slime=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_spider=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_stray=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_vex=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_vindicator=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_witch=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_wither=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_wither_skeleton=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_warden=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_zoglin=1..}] run function fernweh:skills/slayer/exp
 execute if entity @s[scores={fnw.slay_zombie=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_zombie_villiager=1..}] run function fernweh:skills/slayer/exp
+execute if entity @s[scores={fnw.slay_zombified_piglin=1..}] run function fernweh:skills/slayer/exp
 
 execute if entity @s[scores={fnw.hunt_pig=1..}] run function fernweh:skills/hunter/exp
 

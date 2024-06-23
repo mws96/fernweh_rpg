@@ -62,6 +62,7 @@ scoreboard objectives add fnw.chop_cherry minecraft.mined:minecraft.cherry_log
 scoreboard objectives add fnw.chop_dark_oak minecraft.mined:minecraft.dark_oak_log
 scoreboard objectives add fnw.chop_jungle minecraft.mined:minecraft.jungle_log
 scoreboard objectives add fnw.chop_mangrove minecraft.mined:minecraft.mangrove_log
+scoreboard objectives add fnw.chop_mangrove_root minecraft.mined:minecraft.mangrove_roots
 scoreboard objectives add fnw.chop_oak minecraft.mined:minecraft.oak_log
 scoreboard objectives add fnw.chop_spruce minecraft.mined:minecraft.spruce_log
 
@@ -88,7 +89,43 @@ scoreboard objectives add fnw.slayer_level dummy
 scoreboard objectives add fnw.slayer_check dummy
 scoreboard objectives add fnw.slayer_scratch dummy
 
+scoreboard objectives add fnw.slay_blaze minecraft.killed:minecraft.blaze
+scoreboard objectives add fnw.slay_bogged minecraft.killed:minecraft.bogged
+scoreboard objectives add fnw.slay_breeze minecraft.killed:minecraft.breeze
+scoreboard objectives add fnw.slay_cave_spider minecraft.killed:minecraft.cave_spider
+scoreboard objectives add fnw.slay_creeper minecraft.killed:minecraft.creeper
+scoreboard objectives add fnw.slay_drowned minecraft.killed:minecraft.drowned
+scoreboard objectives add fnw.slay_elder_guardian minecraft.killed:minecraft.elder_guardian
+scoreboard objectives add fnw.slay_enderman minecraft.killed:minecraft.enderman
+scoreboard objectives add fnw.slay_endermite minecraft.killed:minecraft.endermite
+scoreboard objectives add fnw.slay_ender_dragon minecraft.killed:minecraft.ender_dragon
+scoreboard objectives add fnw.slay_evoker minecraft.killed:minecraft.evoker
+scoreboard objectives add fnw.slay_ghast minecraft.killed:minecraft.ghast
+scoreboard objectives add fnw.slay_guardian minecraft.killed:minecraft.guardian
+scoreboard objectives add fnw.slay_hoglin minecraft.killed:minecraft.hoglin
+scoreboard objectives add fnw.slay_husk minecraft.killed:minecraft.husk
+scoreboard objectives add fnw.slay_magma_cube minecraft.killed:minecraft.magma_cube
+scoreboard objectives add fnw.slay_phantom minecraft.killed:minecraft.phantom
+scoreboard objectives add fnw.slay_piglin minecraft.killed:minecraft.piglin
+scoreboard objectives add fnw.slay_piglin_brute minecraft.killed:minecraft.piglin_brute
+scoreboard objectives add fnw.slay_pillager minecraft.killed:minecraft.pillager
+scoreboard objectives add fnw.slay_ravager minecraft.killed:minecraft.ravager
+scoreboard objectives add fnw.slay_shulker minecraft.killed:minecraft.shulker
+scoreboard objectives add fnw.slay_silverfish minecraft.killed:minecraft.silverfish
+scoreboard objectives add fnw.slay_skeleton minecraft.killed:minecraft.skeleton
+scoreboard objectives add fnw.slay_slime minecraft.killed:minecraft.slime
+scoreboard objectives add fnw.slay_spider minecraft.killed:minecraft.spider
+scoreboard objectives add fnw.slay_stray minecraft.killed:minecraft.stray
+scoreboard objectives add fnw.slay_vex minecraft.killed:minecraft.vex
+scoreboard objectives add fnw.slay_vindicator minecraft.killed:minecraft.vindicator
+scoreboard objectives add fnw.slay_witch minecraft.killed:minecraft.witch
+scoreboard objectives add fnw.slay_wither minecraft.killed:minecraft.wither
+scoreboard objectives add fnw.slay_wither_skeleton minecraft.killed:minecraft.wither_skeleton
+scoreboard objectives add fnw.slay_warden minecraft.killed:minecraft.warden
+scoreboard objectives add fnw.slay_zoglin minecraft.killed:minecraft.zoglin
 scoreboard objectives add fnw.slay_zombie minecraft.killed:minecraft.zombie
+scoreboard objectives add fnw.slay_zombie_villiager minecraft.killed:minecraft.zombie_villager
+scoreboard objectives add fnw.slay_zombified_piglin minecraft.killed:minecraft.zombified_piglin
 
 scoreboard objectives add fnw.hunter_xp dummy
 scoreboard objectives add fnw.hunter_level dummy
