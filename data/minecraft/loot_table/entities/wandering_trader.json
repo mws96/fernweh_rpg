@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity",
+  "random_sequence": "minecraft:entities/wandering_trader",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "fernweh:entities/wandering_trader"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

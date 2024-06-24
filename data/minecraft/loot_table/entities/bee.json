@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity",
+  "random_sequence": "minecraft:entities/bee",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "fernweh:entities/bee"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

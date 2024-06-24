@@ -140,6 +140,4 @@ execute if entity @s[scores={fnw.hunt_turtle=1..}] run function fernweh:skills/h
 execute if entity @s[scores={fnw.hunt_villager=1..}] run function fernweh:skills/hunter/exp
 execute if entity @s[scores={fnw.hunt_wandering_trader=1..}] run function fernweh:skills/hunter/exp
 
-#Anything below this is meh
-
 execute if entity @s[scores={fnw.fish_success=1..}] run function fernweh:skills/fishing/exp

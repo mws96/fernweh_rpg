@@ -11,7 +11,29 @@
               "chance": 0.01
             }
           ],
-          "name": "minecraft:minecraft:diamond_axe"
+          "name": "minecraft:diamond_axe"
+        }
+      ],
+      "rolls": {
+        "type": "score",
+        "target": {
+          "type": "context",
+          "target": "attacker"
+        },
+        "score": "fnw.slayer_level"
+      }
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.001
+            }
+          ],
+          "name": "minecraft:vindicator_spawn_egg"
         }
       ],
       "rolls": {

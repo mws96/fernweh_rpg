@@ -11,7 +11,7 @@
               "chance": 0.02
             }
           ],
-          "name": "minecraft:minecraft:diamond_axe"
+          "name": "minecraft:diamond_axe"
         }
       ],
       "rolls": {
@@ -33,7 +33,51 @@
               "chance": 0.001
             }
           ],
-          "name": "minecraft:minecraft:netherite_axe"
+          "name": "minecraft:piglin_brute_spawn_egg"
+        }
+      ],
+      "rolls": {
+        "type": "score",
+        "target": {
+          "type": "context",
+          "target": "attacker"
+        },
+        "score": "fnw.slayer_level"
+      }
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.001
+            }
+          ],
+          "name": "minecraft:netherite_axe"
+        }
+      ],
+      "rolls": {
+        "type": "score",
+        "target": {
+          "type": "context",
+          "target": "attacker"
+        },
+        "score": "fnw.slayer_level"
+      }
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.001
+            }
+          ],
+          "name": "minecraft:piglin_brute_spawn_egg"
         }
       ],
       "rolls": {

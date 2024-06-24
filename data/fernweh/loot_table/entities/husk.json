@@ -22,6 +22,28 @@
         },
         "score": "fnw.slayer_level"
       }
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.001
+            }
+          ],
+          "name": "minecraft:husk_spawn_egg"
+        }
+      ],
+      "rolls": {
+        "type": "score",
+        "target": {
+          "type": "context",
+          "target": "attacker"
+        },
+        "score": "fnw.slayer_level"
+      }
     }
   ],
   "random_sequence": "minecraft:entities/husk"

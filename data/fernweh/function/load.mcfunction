@@ -169,8 +169,6 @@ scoreboard objectives add fnw.hunt_turtle minecraft.killed:minecraft.turtle
 scoreboard objectives add fnw.hunt_villager minecraft.killed:minecraft.villager
 scoreboard objectives add fnw.hunt_wandering_trader minecraft.killed:minecraft.wandering_trader
 
-#Anything below this is meh
-
 scoreboard objectives add fnw.fish_xp dummy
 scoreboard objectives add fnw.fish_level dummy
 scoreboard objectives add fnw.fish_check dummy

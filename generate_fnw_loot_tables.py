@@ -95,60 +95,135 @@ hostile_mobs = {
     { 'drop_rate': 0.002, 'drop_item': 'elytra' }
   ],
   'piglin': [
-    { 'drop_rate': 0.02, 'drop_item': 'minecraft:lava_bucket' }
+    { 'drop_rate': 0.02, 'drop_item': 'lava_bucket' }
   ],
   'piglin_brute': [
-    { 'drop_rate': 0.02, 'drop_item': 'minecraft:diamond_axe' },
-    { 'drop_rate': 0.001, 'drop_item': 'minecraft:netherite_axe' }
+    { 'drop_rate': 0.02, 'drop_item': 'diamond_axe' },
+    { 'drop_rate': 0.001, 'drop_item': 'netherite_axe' }
   ],
   'pillager': [
-    { 'drop_rate': 0.05, 'drop_item': 'minecraft:firework_rocket' }
+    { 'drop_rate': 0.05, 'drop_item': 'firework_rocket' }
   ],
   'ravager': [
-    { 'drop_rate': 0.5, 'drop_item': 'minecraft:gravel' }
+    { 'drop_rate': 0.5, 'drop_item': 'gravel' }
   ],
   'shulker': [
-    { 'drop_rate': 0.05, 'drop_item': 'minecraft:shulker_shell' }
+    { 'drop_rate': 0.05, 'drop_item': 'shulker_shell' }
   ],
   'silverfish': [
-    { 'drop_rate': 0.01, 'drop_item': 'minecraft:diamond' }
+    { 'drop_rate': 0.01, 'drop_item': 'diamond' }
   ],
   'skeleton': [
     { 'drop_rate': 0.1, 'drop_item': 'bone' },
     { 'drop_rate': 0.005, 'drop_item': 'bone_block' }
   ],
   'slime': [
-    { 'drop_rate': 0.01, 'drop_item': 'minecraft:slime_block' }
+    { 'drop_rate': 0.01, 'drop_item': 'slime_block' }
   ],
   'spider': [
-    { 'drop_rate': 0.1, 'drop_item': 'minecraft:spider_eye' }
+    { 'drop_rate': 0.1, 'drop_item': 'spider_eye' }
   ],
   'stray': [
-    { 'drop_rate': 0.05, 'drop_item': 'minecraft:lether_boots' }
+    { 'drop_rate': 0.05, 'drop_item': 'lether_boots' }
   ],
   'vex': [
-    { 'drop_rate': 0.01, 'drop_item': 'minecraft:jukebox' }
+    { 'drop_rate': 0.01, 'drop_item': 'jukebox' }
   ],
   'vindicator': [
-    { 'drop_rate': 0.01, 'drop_item': 'minecraft:diamond_axe' }
+    { 'drop_rate': 0.01, 'drop_item': 'diamond_axe' }
   ],
   'witch': [
-    { 'drop_rate': 0.01, 'drop_item': 'minecraft:glowstone_dust' }
+    { 'drop_rate': 0.01, 'drop_item': 'glowstone_dust' }
   ],
   'wither': [
-    { 'drop_rate': 0.01, 'drop_item': 'minecraft:wither_rose' }
+    { 'drop_rate': 0.01, 'drop_item': 'wither_rose' }
   ],
   'wither_skeleton': [
-    { 'drop_rate': 0.005, 'drop_item': 'minecraft:wither_skeleton_skull' }
+    { 'drop_rate': 0.005, 'drop_item': 'wither_skeleton_skull' }
   ],
   'warden': [
-    { 'drop_rate': 0.5, 'drop_item': 'minecraft:deepslate' }
+    { 'drop_rate': 0.5, 'drop_item': 'deepslate' }
   ],
   'zoglin': [
-    { 'drop_rate': 0.01, 'drop_item': 'minecraft:golden_apple' }
+    { 'drop_rate': 0.01, 'drop_item': 'golden_apple' }
   ],
   'zombie': [
-    { 'drop_rate': 0.07, 'drop_item': 'minecraft:rotten_flesh' }
+    { 'drop_rate': 0.07, 'drop_item': 'rotten_flesh' }
+  ],
+}
+
+friendly_mobs = {
+  'allay': [
+    { 'drop_rate': 0.01, 'drop_item': 'jukebox' }
+  ],
+  'bat': [
+    { 'drop_rate': 0.05, 'drop_item': 'black_candle' }
+  ],
+  'bee': [
+    { 'drop_rate': 0.1, 'drop_item': 'honeycomb' }
+  ],
+  'cat': [
+    { 'drop_rate': 0.005, 'drop_item': 'music_disc_cat' }
+  ],
+  'chicken': [
+    { 'drop_rate': 0.08, 'drop_item': 'chicken' }
+  ],
+  'cod': [
+    { 'drop_rate': 0.07, 'drop_item': 'cod' }
+  ],
+  'cow': [
+    { 'drop_rate': 0.07, 'drop_item': 'beef' },
+    { 'drop_rate': 0.03, 'drop_item': 'leather' }
+  ],
+  'donkey': [
+    { 'drop_rate': 0.01, 'drop_item': 'string' }
+  ],
+  'frog': [
+    { 'drop_rate': 0.01, 'drop_item': 'spider_eye' }
+  ],
+  'glow_squid': [
+    { 'drop_rate': 0.1, 'drop_item': 'glow_ink_sac' }
+  ],
+  'iron_golem': [
+    { 'drop_rate': 0.01, 'drop_item': 'iron_block' }
+  ],
+  'mooshroom': [
+    { 'drop_rate': 0.07, 'drop_item': 'beef' },
+    { 'drop_rate': 0.03, 'drop_item': 'leather' },
+    { 'drop_rate': 0.005, 'drop_item': 'red_mushroom_block' },
+    { 'drop_rate': 0.005, 'drop_item': 'brown_mushroom_block' }
+  ],
+  'pig': [
+    { 'drop_rate': 0.08, 'drop_item': 'porkchop' }
+  ],
+  'rabbit': [
+    { 'drop_rate': 0.07, 'drop_item': 'rabbit' },
+    { 'drop_rate': 0.02, 'drop_item': 'rabbit_hide' },
+    { 'drop_rate': 0.001, 'drop_item': 'rabbit_foot' }
+  ],
+  'salmon': [
+    { 'drop_rate': 0.07, 'drop_item': 'salmon' }
+  ],
+  'sheep': [
+    { 'drop_rate': 0.09, 'drop_item': 'mutton' }
+  ],
+  'snow_golem': [
+    { 'drop_rate': 0.01, 'drop_item': 'golden_carrot' }
+  ],
+  'squid': [
+    { 'drop_rate': 0.04, 'drop_item': 'ink_sac' }
+  ],
+  'strider': [
+    { 'drop_rate': 0.04, 'drop_item': 'string' }
+  ],
+  'trader_llama': [
+    { 'drop_rate': 0.05, 'drop_item': 'emerald' }
+  ],
+  'villager': [
+    { 'drop_rate': 0.2, 'drop_item': 'emerald' }
+  ],
+  'wandering_trader': [
+    { 'drop_rate': 0.01, 'drop_item': 'diamond_block' }
   ],
 }
 
@@ -254,6 +329,29 @@ def generate_entity_loot_tables(entity_map, skill_name):
           "score": f"fnw.{skill_name}"
         }
       })
+      
+      custom_table['pools'].append({
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.001
+              }
+            ],
+            "name": f"minecraft:{entity}_spawn_egg"
+          }
+        ],
+        "rolls": {
+          "type": "score",
+          "target": {
+            "type": "context",
+            "target": "attacker"
+          },
+          "score": f"fnw.{skill_name}"
+        }
+      })
     
     with open(f'data/fernweh/loot_table/entities/{entity}.json', 'w') as wp:
       json.dump(custom_table, wp, indent=2)
@@ -287,10 +385,12 @@ if __name__ == '__main__':
   generate_block_loot_tables(log_blocks, 'lumber_level', 'minecraft:axes')
   generate_block_loot_tables(dig_blocks, 'excavate_level', 'minecraft:shovels')
   generate_entity_loot_tables(hostile_mobs, 'slayer_level')
+  generate_entity_loot_tables(friendly_mobs, 'hunter_level')
   
   if len(sys.argv) == 2:
     override_vanilla_loot_tables(sys.argv[1], ore_blocks, 'blocks')
     override_vanilla_loot_tables(sys.argv[1], log_blocks, 'blocks')
     override_vanilla_loot_tables(sys.argv[1], dig_blocks, 'blocks')
     override_vanilla_loot_tables(sys.argv[1], hostile_mobs, 'entities')
+    override_vanilla_loot_tables(sys.argv[1], friendly_mobs, 'entities')
   

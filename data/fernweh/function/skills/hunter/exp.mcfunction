@@ -3,7 +3,7 @@ scoreboard players add @s[scores={fnw.hunt_axolotl=1..}] fnw.hunter_xp 5
 scoreboard players add @s[scores={fnw.hunt_bat=1..}] fnw.hunter_xp 5
 scoreboard players add @s[scores={fnw.hunt_bee=1..}] fnw.hunter_xp 10
 scoreboard players add @s[scores={fnw.hunt_camel=1..}] fnw.hunter_xp 10
-scoreboard players add @s[scores={fnw.hunt_cat=1..}] fnw.hunter_xp 100
+scoreboard players add @s[scores={fnw.hunt_cat=1..}] fnw.hunter_xp 10
 scoreboard players add @s[scores={fnw.hunt_chicken=1..}] fnw.hunter_xp 1
 scoreboard players add @s[scores={fnw.hunt_cod=1..}] fnw.hunter_xp 1
 scoreboard players add @s[scores={fnw.hunt_cow=1..}] fnw.hunter_xp 1
