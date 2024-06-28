@@ -1,14 +1,20 @@
+# ===== TRIGGERS =====
 scoreboard objectives add skills trigger
+scoreboard objectives add cube_balance trigger
 
+# ===== MISC =====
 scoreboard objectives add fnw dummy
 scoreboard players set fnw.1 fnw 1
 scoreboard players set fnw.10 fnw 10
 
+# ===== MINING =====
+# Mining Leveling
 scoreboard objectives add fnw.mining_xp dummy
 scoreboard objectives add fnw.mining_level dummy
 scoreboard objectives add fnw.mining_check dummy
 scoreboard objectives add fnw.mining_scratch dummy
 
+# Mining XP
 scoreboard objectives add fnw.break_stone minecraft.mined:minecraft.stone
 scoreboard objectives add fnw.break_diorite minecraft.mined:minecraft.diorite
 scoreboard objectives add fnw.break_andesite minecraft.mined:minecraft.andesite
@@ -51,11 +57,14 @@ scoreboard objectives add fnw.break_deepslate_emerald_ore minecraft.mined:minecr
 scoreboard objectives add fnw.break_diamond_ore minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add fnw.break_deepslate_diamond_ore minecraft.mined:minecraft.deepslate_diamond_ore
 
+# ===== LUMBER =====
+# Lumber Leveling
 scoreboard objectives add fnw.lumber_xp dummy
 scoreboard objectives add fnw.lumber_level dummy
 scoreboard objectives add fnw.lumber_check dummy
 scoreboard objectives add fnw.lumber_scratch dummy
 
+# Lumber XP
 scoreboard objectives add fnw.chop_acacia minecraft.mined:minecraft.acacia_log
 scoreboard objectives add fnw.chop_birch minecraft.mined:minecraft.birch_log
 scoreboard objectives add fnw.chop_cherry minecraft.mined:minecraft.cherry_log
@@ -66,11 +75,14 @@ scoreboard objectives add fnw.chop_mangrove_root minecraft.mined:minecraft.mangr
 scoreboard objectives add fnw.chop_oak minecraft.mined:minecraft.oak_log
 scoreboard objectives add fnw.chop_spruce minecraft.mined:minecraft.spruce_log
 
+# ===== EXCAVATE =====
+# Excavate Leveling
 scoreboard objectives add fnw.excavate_xp dummy
 scoreboard objectives add fnw.excavate_level dummy
 scoreboard objectives add fnw.excavate_check dummy
 scoreboard objectives add fnw.excavate_scratch dummy
 
+# Excavate XP
 scoreboard objectives add fnw.dig_grass minecraft.mined:minecraft.grass_block
 scoreboard objectives add fnw.dig_dirt minecraft.mined:minecraft.dirt
 scoreboard objectives add fnw.dig_gravel minecraft.mined:minecraft.gravel
@@ -84,11 +96,14 @@ scoreboard objectives add fnw.dig_rooted_dirt minecraft.mined:minecraft.rooted_d
 scoreboard objectives add fnw.dig_soul_sand minecraft.mined:minecraft.soul_sand
 scoreboard objectives add fnw.dig_soul_soil minecraft.mined:minecraft.soul_soil
 
+# ===== SLAYER =====
+# Slayer Leveling
 scoreboard objectives add fnw.slayer_xp dummy
 scoreboard objectives add fnw.slayer_level dummy
 scoreboard objectives add fnw.slayer_check dummy
 scoreboard objectives add fnw.slayer_scratch dummy
 
+# Slayer XP
 scoreboard objectives add fnw.slay_blaze minecraft.killed:minecraft.blaze
 scoreboard objectives add fnw.slay_bogged minecraft.killed:minecraft.bogged
 scoreboard objectives add fnw.slay_breeze minecraft.killed:minecraft.breeze
@@ -127,11 +142,14 @@ scoreboard objectives add fnw.slay_zombie minecraft.killed:minecraft.zombie
 scoreboard objectives add fnw.slay_zombie_villiager minecraft.killed:minecraft.zombie_villager
 scoreboard objectives add fnw.slay_zombified_piglin minecraft.killed:minecraft.zombified_piglin
 
+# ===== HUNTER =====
+# Hunter Leveling
 scoreboard objectives add fnw.hunter_xp dummy
 scoreboard objectives add fnw.hunter_level dummy
 scoreboard objectives add fnw.hunter_check dummy
 scoreboard objectives add fnw.hunter_scratch dummy
 
+# Hunter XP
 scoreboard objectives add fnw.hunt_allay minecraft.killed:minecraft.allay
 scoreboard objectives add fnw.hunt_axolotl minecraft.killed:minecraft.axolotl
 scoreboard objectives add fnw.hunt_bat minecraft.killed:minecraft.bat
@@ -169,9 +187,16 @@ scoreboard objectives add fnw.hunt_turtle minecraft.killed:minecraft.turtle
 scoreboard objectives add fnw.hunt_villager minecraft.killed:minecraft.villager
 scoreboard objectives add fnw.hunt_wandering_trader minecraft.killed:minecraft.wandering_trader
 
+# ===== FISHING =====
+# Fishing Leveling
 scoreboard objectives add fnw.fish_xp dummy
 scoreboard objectives add fnw.fish_level dummy
 scoreboard objectives add fnw.fish_check dummy
 scoreboard objectives add fnw.fish_scratch dummy
 
+# Fishing XP
 scoreboard objectives add fnw.fish_success minecraft.custom:fish_caught
+
+# ===== CURRENCY EARNING =====
+scoreboard objectives add fnw.cube_fragments dummy
+scoreboard objectives add fnw.cube_frag_earn_timer minecraft.custom:play_time

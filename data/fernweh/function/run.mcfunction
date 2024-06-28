@@ -1,5 +1,8 @@
+# ===== TRIGGERS =====
 execute if entity @s[scores={skills=1..}] run function fernweh:skills
+execute if entity @s[scores={cube_balance=1..}] run function fernweh:cube_balance
 
+# ===== MINING =====
 execute if entity @s[scores={fnw.break_stone=1..}] run function fernweh:skills/mining/exp
 execute if entity @s[scores={fnw.break_diorite=1..}] run function fernweh:skills/mining/exp
 execute if entity @s[scores={fnw.break_andesite=1..}] run function fernweh:skills/mining/exp
@@ -42,6 +45,7 @@ execute if entity @s[scores={fnw.break_deepslate_emerald_ore=1..}] run function 
 execute if entity @s[scores={fnw.break_diamond_ore=1..}] run function fernweh:skills/mining/exp
 execute if entity @s[scores={fnw.break_deepslate_diamond_ore=1..}] run function fernweh:skills/mining/exp
 
+# ===== LUMBER =====
 execute if entity @s[scores={fnw.chop_acacia=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_birch=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_cherry=1..}] run function fernweh:skills/lumber/exp
@@ -52,6 +56,7 @@ execute if entity @s[scores={fnw.chop_mangrove_roots=1..}] run function fernweh:
 execute if entity @s[scores={fnw.chop_oak=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_spruce=1..}] run function fernweh:skills/lumber/exp
 
+# ===== EXCAVATE =====
 execute if entity @s[scores={fnw.dig_grass=1..}] run function fernweh:skills/excavate/exp
 execute if entity @s[scores={fnw.dig_dirt=1..}] run function fernweh:skills/excavate/exp
 execute if entity @s[scores={fnw.dig_gravel=1..}] run function fernweh:skills/excavate/exp
@@ -65,6 +70,7 @@ execute if entity @s[scores={fnw.dig_rooted_dirt=1..}] run function fernweh:skil
 execute if entity @s[scores={fnw.dig_soul_sand=1..}] run function fernweh:skills/excavate/exp
 execute if entity @s[scores={fnw.dig_soul_soil=1..}] run function fernweh:skills/excavate/exp
 
+# ===== SLAYER =====
 execute if entity @s[scores={fnw.slay_blaze=1..}] run function fernweh:skills/slayer/exp
 execute if entity @s[scores={fnw.slay_bogged=1..}] run function fernweh:skills/slayer/exp
 execute if entity @s[scores={fnw.slay_breeze=1..}] run function fernweh:skills/slayer/exp
@@ -103,6 +109,7 @@ execute if entity @s[scores={fnw.slay_zombie=1..}] run function fernweh:skills/s
 execute if entity @s[scores={fnw.slay_zombie_villiager=1..}] run function fernweh:skills/slayer/exp
 execute if entity @s[scores={fnw.slay_zombified_piglin=1..}] run function fernweh:skills/slayer/exp
 
+# ===== HUNTER =====
 execute if entity @s[scores={fnw.hunt_allay=1..}] run function fernweh:skills/hunter/exp
 execute if entity @s[scores={fnw.hunt_axolotl=1..}] run function fernweh:skills/hunter/exp
 execute if entity @s[scores={fnw.hunt_bat=1..}] run function fernweh:skills/hunter/exp
@@ -140,4 +147,9 @@ execute if entity @s[scores={fnw.hunt_turtle=1..}] run function fernweh:skills/h
 execute if entity @s[scores={fnw.hunt_villager=1..}] run function fernweh:skills/hunter/exp
 execute if entity @s[scores={fnw.hunt_wandering_trader=1..}] run function fernweh:skills/hunter/exp
 
+# ===== FISHING =====
 execute if entity @s[scores={fnw.fish_success=1..}] run function fernweh:skills/fishing/exp
+
+# ===== CURRENCY EARNING =====
+# 6000 ticks == 5 minutes
+execute if entity @s[scores={fnw.cube_frag_earn_timer=6000..}] run function fernweh:currency/earn_frag
