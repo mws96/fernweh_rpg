@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/lumber_lvl_25",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 50 in Lumber"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:golden_axe"
+    },
+    "title": {
+      "text": "Lumber Professional"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

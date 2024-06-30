@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/lumber_lvl_50",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 75 in Lumber"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:diamond_axe"
+    },
+    "title": {
+      "text": "Lumber Expert"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

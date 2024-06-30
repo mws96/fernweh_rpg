@@ -1,0 +1,27 @@
+{
+  "parent": "fernweh:rpg/hunter_lvl_25",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 50 in Hunter"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:tipped_arrow",
+      "components": {
+        "minecraft:potion_contents": "weakness"
+      }
+    },
+    "title": {
+      "text": "Hunter Professional"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "fernweh:rpg/hunter_lvl_10",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 25 in Hunter"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:tipped_arrow",
+      "components": {
+        "minecraft:potion_contents": "mundane"
+      }
+    },
+    "title": {
+      "text": "Hunter Apprentice"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

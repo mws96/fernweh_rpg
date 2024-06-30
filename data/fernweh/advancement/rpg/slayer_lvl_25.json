@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/slayer_lvl_10",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 25 in Slayer"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:iron_sword"
+    },
+    "title": {
+      "text": "Slayer Apprentice"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

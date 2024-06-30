@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 1 in Slayer"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:wooden_sword"
+    },
+    "title": {
+      "text": "Slayer Beginner"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

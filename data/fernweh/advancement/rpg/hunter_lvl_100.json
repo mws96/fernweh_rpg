@@ -1,0 +1,27 @@
+{
+  "parent": "fernweh:rpg/hunter_lvl_75",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 100 in Hunter"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:tipped_arrow",
+      "components": {
+        "minecraft:potion_contents": "healing"
+      }
+    },
+    "title": {
+      "text": "Hunter Master"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/slayer_lvl_25",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 50 in Slayer"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:golden_sword"
+    },
+    "title": {
+      "text": "Slayer Professional"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

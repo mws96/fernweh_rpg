@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/lumber_lvl_10",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 25 in Lumber"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:iron_axe"
+    },
+    "title": {
+      "text": "Lumber Apprentice"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

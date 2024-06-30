@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 1 in Excavation"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:wooden_shovel"
+    },
+    "title": {
+      "text": "Excavation Beginner"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

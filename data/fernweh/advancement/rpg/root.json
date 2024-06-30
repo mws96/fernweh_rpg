@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": []
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "text": "Milestones for leveling up on the Fernweh server."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:purple_dye",
+      "components": {
+        "minecraft:custom_model_data": 75001
+      }
+    },
+    "show_toast": false,
+    "title": {
+      "text": "Fernweh RPG Skills"
+    }
+  }
+}

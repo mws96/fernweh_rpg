@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/fishing_lvl_50",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 75 in Fishing"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:tropical_fish"
+    },
+    "title": {
+      "text": "Fishing Expert"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}

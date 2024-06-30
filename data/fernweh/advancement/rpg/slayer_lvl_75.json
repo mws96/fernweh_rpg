@@ -1,0 +1,24 @@
+{
+  "parent": "fernweh:rpg/slayer_lvl_50",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Reach level 75 in Slayer"
+    },
+    "frame": "task",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:diamond_sword"
+    },
+    "title": {
+      "text": "Slayer Expert"
+    }
+  },
+  "rewards": {
+    "function": "fernweh:currency/give_cube"
+  }
+}
