@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LAL",
+    "ADA",
+    "LAL"
+  ],
+  "key": {
+    "L": {  
+      "item": "minecraft:lapis_lazuli"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "id": "minecraft:purple_dye",
+    "count": 1,
+    "components": {
+      "minecraft:custom_model_data": 75001,
+      "minecraft:custom_name": "{\"text\": \"Fernweh Cube\", \"color\": \"light_purple\", \"italic\":false}",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:lore": [
+        "{\"text\": \"A valuable resource.\", \"color\": \"gray\", \"italic\":false}",
+        "{\"text\": \"One Cube is worth 10 Cube Fragments\", \"color\": \"gray\", \"italic\":true}"
+      ]
+    }
+  }
+}
