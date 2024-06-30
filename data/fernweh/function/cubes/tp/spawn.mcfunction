@@ -1,4 +1,10 @@
 # function run after check function
-scoreboard players remove @s fnw.cube_fragments 10
-tellraw @s [{"text": "Teleporting to spawn. Thanks for the cube! (This may take a moment...)", "color":"green"}]
-tp @s 578 63 322
+# fnw.cube_fragment_scratch has number of cubes in player inventory
+execute if entity @s[scores={fnw.cube_fragment_scratch=1..}] run clear @s minecraft:purple_dye[minecraft:custom_model_data=75001] 1
+execute if entity @s[scores={fnw.cube_fragment_scratch=1..}] run tellraw @s [{"text": "1 Cube deducted from your inventory. Teleporting to spawn. ", "color":"blue"},{"text":"This may take a moment...", "color":"gray", "italic":true}]
+
+execute if entity @s[scores={fnw.cube_fragments=10..,fnw.cube_fragment_scratch=0}] run tellraw @s [{"text": "10 Cube Fragments deducted from your balance. Teleporting to spawn. ", "color":"blue"},{"text":"This may take a moment...", "color":"gray", "italic":true}]
+execute if entity @s[scores={fnw.cube_fragments=10..,fnw.cube_fragment_scratch=0}] run scoreboard players remove @s fnw.cube_fragments 10
+execute if entity @s[scores={fnw.cube_fragment_scratch=0}] run function fernweh:currency/balance
+
+tp @s 0 64 0
