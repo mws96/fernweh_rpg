@@ -151,5 +151,5 @@ execute if entity @s[scores={fnw.hunt_wandering_trader=1..}] run function fernwe
 execute if entity @s[scores={fnw.fish_success=1..}] run function fernweh:skills/fishing/exp
 
 # ===== CURRENCY EARNING =====
-# 6000 ticks == 5 minutes
-execute if entity @s[scores={fnw.cube_frag_earn_timer=6000..}] run function fernweh:currency/earn_frag
+# 7200 ticks == 6 minutes
+execute if entity @s[scores={fnw.cube_frag_earn_timer=7200..}] run function fernweh:currency/earn_frag
