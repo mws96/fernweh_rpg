@@ -2,6 +2,7 @@ scoreboard players enable @s skills
 scoreboard players enable @s cube_balance
 scoreboard players enable @s cube_deposit
 scoreboard players enable @s cube_withdraw
+scoreboard players enable @s tp_spawn
 
 scoreboard players set @s fnw.mining_xp 0
 scoreboard players set @s fnw.mining_level 0

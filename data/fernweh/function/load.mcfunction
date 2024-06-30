@@ -3,6 +3,7 @@ scoreboard objectives add skills trigger
 scoreboard objectives add cube_balance trigger
 scoreboard objectives add cube_deposit trigger
 scoreboard objectives add cube_withdraw trigger
+scoreboard objectives add tp_spawn trigger
 
 # ===== MISC =====
 scoreboard objectives add fnw dummy
