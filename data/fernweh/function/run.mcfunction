@@ -1,9 +1,9 @@
 # ===== TRIGGERS =====
-execute if entity @s[scores={skills=1..}] run function fernweh:skills
-execute if entity @s[scores={cube_balance=1..}] run function fernweh:cube_balance
-execute if entity @s[scores={cube_deposit=1..}] run function fernweh:cube_deposit
-execute if entity @s[scores={cube_withdraw=1..}] run function fernweh:cube_withdraw
-execute if entity @s[scores={tp_spawn=1..}] run function fernweh:cubes/tp/checkspawn
+execute if entity @s[scores={skills=1..}] run function fernweh:triggers/skills
+execute if entity @s[scores={cube_balance=1..}] run function fernweh:triggers/cube_balance
+execute if entity @s[scores={cube_deposit=1..}] run function fernweh:triggers/cube_deposit
+execute if entity @s[scores={cube_withdraw=1..}] run function fernweh:triggers/cube_withdraw
+execute if entity @s[scores={tp_spawn=1..}] run function fernweh:triggers/tp_spawn
 
 # ===== MINING =====
 execute if entity @s[scores={fnw.break_stone=1..}] run function fernweh:skills/mining/exp
@@ -151,6 +151,7 @@ execute if entity @s[scores={fnw.hunt_villager=1..}] run function fernweh:skills
 execute if entity @s[scores={fnw.hunt_wandering_trader=1..}] run function fernweh:skills/hunter/exp
 
 # ===== FISHING =====
+execute if entity @s[scores={fnw.fish_success=1..}] run loot give @s loot fernweh:gameplay/fishing
 execute if entity @s[scores={fnw.fish_success=1..}] run function fernweh:skills/fishing/exp
 
 # ===== CURRENCY EARNING =====

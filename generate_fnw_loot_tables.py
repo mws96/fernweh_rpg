@@ -227,6 +227,17 @@ friendly_mobs = {
   ],
 }
 
+gameplay_drops = {
+  'fishing': [
+    { 'drop_rate': 0.001, 'drop_item': 'enchanted_golden_apple' },
+    { 'drop_rate': 0.002, 'drop_item': 'deepslate_emerald_ore' },
+    { 'drop_rate': 0.0001, 'drop_item': 'elytra' },
+    { 'drop_rate': 0.0001, 'drop_item': 'nether_star' },
+    { 'drop_rate': 0.0001, 'drop_item': 'totem_of_undying' },
+    { 'drop_rate': 0.01, 'drop_item': 'wet_sponge' },
+  ],
+}
+
 def generate_block_loot_tables(block_map, skill_name, tool_tag):
   """
   Generates Fernweh loot tables for blocks
@@ -355,6 +366,48 @@ def generate_entity_loot_tables(entity_map, skill_name):
     
     with open(f'data/fernweh/loot_table/entities/{entity}.json', 'w') as wp:
       json.dump(custom_table, wp, indent=2)
+
+
+def generate_fishing_loot_tables(gameplay_map, skill_name):
+  """
+  Generates Fernweh loot tables for fishing
+  """
+  for gameplay in gameplay_map.keys():
+    custom_table = {
+      "type": "minecraft:chest",
+      "pools": [],
+      "random_sequence": f"minecraft:gameplay/{gameplay}"
+    }
+    drop_info = gameplay_map[gameplay]
+    for drop_map in drop_info:
+      drop_rate = drop_map['drop_rate']
+      drop_item = drop_map.get('drop_item', gameplay)
+      custom_table['pools'].append({
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": drop_rate
+              }
+            ],
+            "name": f"minecraft:{drop_item}"
+          }
+        ],
+        "rolls": {
+          "type": "score",
+          "target": {
+            "type": "context",
+            "target": "this"
+          },
+          "score": f"fnw.{skill_name}"
+        }
+      })
+    
+    with open(f'data/fernweh/loot_table/gameplay/{gameplay}.json', 'w') as wp:
+      json.dump(custom_table, wp, indent=2)
+
       
 def override_vanilla_loot_tables(vanilla_path, block_map, object_type):
   """
@@ -386,6 +439,7 @@ if __name__ == '__main__':
   generate_block_loot_tables(dig_blocks, 'excavate_level', 'minecraft:shovels')
   generate_entity_loot_tables(hostile_mobs, 'slayer_level')
   generate_entity_loot_tables(friendly_mobs, 'hunter_level')
+  generate_fishing_loot_tables(gameplay_drops, 'fish_level')
   
   if len(sys.argv) == 2:
     override_vanilla_loot_tables(sys.argv[1], ore_blocks, 'blocks')
