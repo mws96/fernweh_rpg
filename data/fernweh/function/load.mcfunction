@@ -1,6 +1,8 @@
 # ===== TRIGGERS =====
 scoreboard objectives add skills trigger
 scoreboard objectives add cube_balance trigger
+scoreboard objectives add cube_deposit trigger
+scoreboard objectives add cube_withdraw trigger
 
 # ===== MISC =====
 scoreboard objectives add fnw dummy
@@ -200,3 +202,4 @@ scoreboard objectives add fnw.fish_success minecraft.custom:fish_caught
 # ===== CURRENCY EARNING =====
 scoreboard objectives add fnw.cube_fragments dummy
 scoreboard objectives add fnw.cube_frag_earn_timer minecraft.custom:play_time
+scoreboard objectives add fnw.cube_fragment_scratch dummy

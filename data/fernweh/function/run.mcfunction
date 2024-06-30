@@ -1,6 +1,8 @@
 # ===== TRIGGERS =====
 execute if entity @s[scores={skills=1..}] run function fernweh:skills
 execute if entity @s[scores={cube_balance=1..}] run function fernweh:cube_balance
+execute if entity @s[scores={cube_deposit=1..}] run function fernweh:cube_deposit
+execute if entity @s[scores={cube_withdraw=1..}] run function fernweh:cube_withdraw
 
 # ===== MINING =====
 execute if entity @s[scores={fnw.break_stone=1..}] run function fernweh:skills/mining/exp
