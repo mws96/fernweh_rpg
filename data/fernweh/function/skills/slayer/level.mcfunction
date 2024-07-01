@@ -14,3 +14,5 @@ execute if entity @s[scores={fnw.slayer_level=75}] run advancement grant @s only
 execute if entity @s[scores={fnw.slayer_level=100}] run advancement grant @s only fernweh:rpg/slayer_lvl_100
 
 execute if entity @s[scores={fnw.slayer_level=..99}] run function fernweh:skills/slayer/set_check
+
+execute if entity @s[scores={fnw.slayer_level=..99}] run function fernweh:skills/set_player_level

@@ -1,0 +1,1 @@
+tellraw @s [{"text": "You need to be at least Player Level: ", "color": "red"}, {"score":{"name": "@s", "objective": "fnw.buy_kit_scratch"}, "color": "red"}, {"text": " to buy this kit.", "color": "red"}]

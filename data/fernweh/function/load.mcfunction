@@ -4,13 +4,43 @@ scoreboard objectives add cube_balance trigger
 scoreboard objectives add cube_deposit trigger
 scoreboard objectives add cube_withdraw trigger
 scoreboard objectives add tp_spawn trigger
+scoreboard objectives add buy_stone_kit trigger
+scoreboard objectives add buy_iron_kit trigger
+scoreboard objectives add buy_diamond_kit trigger
 
 # ===== MISC =====
 scoreboard objectives add fnw dummy
 scoreboard players set fnw.1 fnw 1
+scoreboard players set fnw.6 fnw 6
 scoreboard players set fnw.10 fnw 10
 
 # ===== MINING =====
+# Player Level
+scoreboard objectives add fnw.player_level dummy
+scoreboard objectives setdisplay below_name fnw.player_level
+team add lvl0_9 {"text": "Level 0 - 9"}
+team modify lvl0_9 color green
+team add lvl10_19 {"text": "Level 10 - 19"}
+team modify lvl10_19 color dark_green
+team add lvl20_29 {"text": "Level 20 - 29"}
+team modify lvl20_29 color dark_aqua
+team add lvl30_39 {"text": "Level 30 - 39"}
+team modify lvl30_39 color dark_blue
+team add lvl40_49 {"text": "Level 40 - 49"}
+team modify lvl40_49 color blue
+team add lvl50_59 {"text": "Level 50 - 59"}
+team modify lvl50_59 color aqua
+team add lvl60_69 {"text": "Level 60 - 69"}
+team modify lvl60_69 color yellow
+team add lvl70_79 {"text": "Level 70 - 79"}
+team modify lvl70_79 color gold
+team add lvl80_89 {"text": "Level 80 - 89"}
+team modify lvl80_89 color red
+team add lvl90_99 {"text": "Level 90 - 99"}
+team modify lvl90_99 color dark_purple
+team add lvl100 {"text": "Level 100"}
+team modify lvl100 color light_purple
+
 # Mining Leveling
 scoreboard objectives add fnw.mining_xp dummy
 scoreboard objectives add fnw.mining_level dummy
@@ -204,3 +234,6 @@ scoreboard objectives add fnw.fish_success minecraft.custom:fish_caught
 scoreboard objectives add fnw.cube_fragments dummy
 scoreboard objectives add fnw.cube_frag_earn_timer minecraft.custom:play_time
 scoreboard objectives add fnw.cube_fragment_scratch dummy
+
+# ==== KITS =====
+scoreboard objectives add fnw.buy_kit_scratch dummy

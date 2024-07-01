@@ -4,6 +4,9 @@ execute if entity @s[scores={cube_balance=1..}] run function fernweh:triggers/cu
 execute if entity @s[scores={cube_deposit=1..}] run function fernweh:triggers/cube_deposit
 execute if entity @s[scores={cube_withdraw=1..}] run function fernweh:triggers/cube_withdraw
 execute if entity @s[scores={tp_spawn=1..}] run function fernweh:triggers/tp_spawn
+execute if entity @s[scores={buy_stone_kit=1..}] run function fernweh:triggers/buy_stone_kit
+execute if entity @s[scores={buy_iron_kit=1..}] run function fernweh:triggers/buy_iron_kit
+execute if entity @s[scores={buy_diamond_kit=1..}] run function fernweh:triggers/buy_diamond_kit
 
 # ===== MINING =====
 execute if entity @s[scores={fnw.break_stone=1..}] run function fernweh:skills/mining/exp

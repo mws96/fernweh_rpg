@@ -14,3 +14,5 @@ execute if entity @s[scores={fnw.hunter_level=75}] run advancement grant @s only
 execute if entity @s[scores={fnw.hunter_level=100}] run advancement grant @s only fernweh:rpg/hunter_lvl_100
 
 execute if entity @s[scores={fnw.hunter_level=..99}] run function fernweh:skills/hunter/set_check
+
+execute if entity @s[scores={fnw.hunter_level=..99}] run function fernweh:skills/set_player_level
