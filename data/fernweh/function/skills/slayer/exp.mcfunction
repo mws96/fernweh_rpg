@@ -7,7 +7,7 @@ scoreboard players add @s[scores={fnw.slay_drowned=1..}] fnw.slayer_xp 2
 scoreboard players add @s[scores={fnw.slay_elder_guardian=1..}] fnw.slayer_xp 1
 scoreboard players add @s[scores={fnw.slay_enderman=1..}] fnw.slayer_xp 1
 scoreboard players add @s[scores={fnw.slay_endermite=1..}] fnw.slayer_xp 3
-execute at @s[scores={fnw.slay_ender_dragon=1..}] run scoreboard players add @a[distance=..50] fnw.slayer_xp 500
+execute at @s[scores={fnw.slay_ender_dragon=1..}] run scoreboard players add @a fnw.slayer_xp 500
 scoreboard players add @s[scores={fnw.slay_evoker=1..}] fnw.slayer_xp 10
 scoreboard players add @s[scores={fnw.slay_ghast=1..}] fnw.slayer_xp 5
 scoreboard players add @s[scores={fnw.slay_guardian=1..}] fnw.slayer_xp 5

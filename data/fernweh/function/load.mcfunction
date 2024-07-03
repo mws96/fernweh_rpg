@@ -18,6 +18,8 @@ scoreboard players set fnw.10 fnw 10
 # Player Level
 scoreboard objectives add fnw.player_level dummy
 scoreboard objectives setdisplay below_name fnw.player_level
+scoreboard objectives setdisplay list fnw.player_level
+scoreboard objectives modify fnw.player_level displayname {"text": "Player Lvl"}
 team add lvl0_9 {"text": "Level 0 - 9"}
 team modify lvl0_9 color green
 team add lvl10_19 {"text": "Level 10 - 19"}
