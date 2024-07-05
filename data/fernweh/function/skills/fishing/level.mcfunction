@@ -13,6 +13,6 @@ execute if entity @s[scores={fnw.fish_level=50}] run advancement grant @s only f
 execute if entity @s[scores={fnw.fish_level=75}] run advancement grant @s only fernweh:rpg/fishing_lvl_75
 execute if entity @s[scores={fnw.fish_level=100}] run advancement grant @s only fernweh:rpg/fishing_lvl_100
 
-execute if entity @s[scores={fnw.fish_level=..99}] run function fernweh:skills/fish/set_check
+execute if entity @s[scores={fnw.fish_level=..99}] run function fernweh:skills/fishing/set_check
 
 execute if entity @s[scores={fnw.fish_level=..99}] run function fernweh:skills/set_player_level
