@@ -7,4 +7,4 @@ execute if entity @s[scores={fnw.cube_fragments=10..,fnw.cube_fragment_scratch=0
 execute if entity @s[scores={fnw.cube_fragments=10..,fnw.cube_fragment_scratch=0}] run scoreboard players remove @s fnw.cube_fragments 10
 execute if entity @s[scores={fnw.cube_fragment_scratch=0}] run function fernweh:currency/balance
 
-tp @s 0 64 0
+tp @s 62 80 -194 59.41 0
