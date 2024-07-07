@@ -124,7 +124,7 @@ hostile_mobs = {
     { 'drop_rate': 0.1, 'drop_item': 'spider_eye' }
   ],
   'stray': [
-    { 'drop_rate': 0.05, 'drop_item': 'lether_boots' }
+    { 'drop_rate': 0.05, 'drop_item': 'leather_boots' }
   ],
   'vex': [
     { 'drop_rate': 0.01, 'drop_item': 'jukebox' }
