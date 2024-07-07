@@ -3,6 +3,8 @@ scoreboard players enable @s cube_balance
 scoreboard players enable @s cube_deposit
 scoreboard players enable @s cube_withdraw
 scoreboard players enable @s tp_spawn
+scoreboard players enable @s tp_minebasealpha
+scoreboard players enable @s tp_startervillage
 scoreboard players enable @s buy_stone_kit
 scoreboard players enable @s buy_iron_kit
 scoreboard players enable @s buy_diamond_kit
