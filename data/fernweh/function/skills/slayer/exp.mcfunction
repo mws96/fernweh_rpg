@@ -21,9 +21,9 @@ scoreboard players add @s[scores={fnw.slay_pillager=1..}] fnw.slayer_xp 15
 scoreboard players add @s[scores={fnw.slay_ravager=1..}] fnw.slayer_xp 80
 scoreboard players add @s[scores={fnw.slay_shulker=1..}] fnw.slayer_xp 15
 scoreboard players add @s[scores={fnw.slay_silverfish=1..}] fnw.slayer_xp 10
-scoreboard players add @s[scores={fnw.slay_skeleton=1..}] fnw.slayer_xp 8
+scoreboard players add @s[scores={fnw.slay_skeleton=1..}] fnw.slayer_xp 4
 scoreboard players add @s[scores={fnw.slay_slime=1..}] fnw.slayer_xp 4
-scoreboard players add @s[scores={fnw.slay_spider=1..}] fnw.slayer_xp 6
+scoreboard players add @s[scores={fnw.slay_spider=1..}] fnw.slayer_xp 4
 scoreboard players add @s[scores={fnw.slay_stray=1..}] fnw.slayer_xp 8
 scoreboard players add @s[scores={fnw.slay_vex=1..}] fnw.slayer_xp 35
 scoreboard players add @s[scores={fnw.slay_vindicator=1..}] fnw.slayer_xp 20
@@ -32,7 +32,7 @@ scoreboard players add @s[scores={fnw.slay_wither=1..}] fnw.slayer_xp 300
 scoreboard players add @s[scores={fnw.slay_wither_skeleton=1..}] fnw.slayer_xp 25
 scoreboard players add @s[scores={fnw.slay_warden=1..}] fnw.slayer_xp 300
 scoreboard players add @s[scores={fnw.slay_zoglin=1..}] fnw.slayer_xp 15
-scoreboard players add @s[scores={fnw.slay_zombie=1..}] fnw.slayer_xp 5
+scoreboard players add @s[scores={fnw.slay_zombie=1..}] fnw.slayer_xp 4
 scoreboard players add @s[scores={fnw.slay_zombie_villiager=1..}] fnw.slayer_xp 1
 scoreboard players add @s[scores={fnw.slay_zombified_piglin=1..}] fnw.slayer_xp 5
 
