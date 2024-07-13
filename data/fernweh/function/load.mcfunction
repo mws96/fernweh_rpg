@@ -5,7 +5,6 @@ scoreboard objectives add cube_deposit trigger
 scoreboard objectives add cube_withdraw trigger
 scoreboard objectives add tp_spawn trigger
 scoreboard objectives add tp_minebasealpha trigger
-scoreboard objectives add tp_startervillage trigger
 scoreboard objectives add buy_stone_kit trigger
 scoreboard objectives add buy_iron_kit trigger
 scoreboard objectives add buy_diamond_kit trigger
