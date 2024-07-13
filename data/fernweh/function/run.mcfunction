@@ -60,9 +60,10 @@ execute if entity @s[scores={fnw.chop_cherry=1..}] run function fernweh:skills/l
 execute if entity @s[scores={fnw.chop_dark_oak=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_jungle=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_mangrove=1..}] run function fernweh:skills/lumber/exp
-execute if entity @s[scores={fnw.chop_mangrove_roots=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_mangrove_root=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_oak=1..}] run function fernweh:skills/lumber/exp
 execute if entity @s[scores={fnw.chop_spruce=1..}] run function fernweh:skills/lumber/exp
+execute if entity @s[scores={fnw.chop_bamboo=1..}] run function fernweh:skills/lumber/exp
 
 # ===== EXCAVATE =====
 execute if entity @s[scores={fnw.dig_grass=1..}] run function fernweh:skills/excavate/exp

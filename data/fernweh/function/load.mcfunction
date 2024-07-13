@@ -111,6 +111,7 @@ scoreboard objectives add fnw.chop_mangrove minecraft.mined:minecraft.mangrove_l
 scoreboard objectives add fnw.chop_mangrove_root minecraft.mined:minecraft.mangrove_roots
 scoreboard objectives add fnw.chop_oak minecraft.mined:minecraft.oak_log
 scoreboard objectives add fnw.chop_spruce minecraft.mined:minecraft.spruce_log
+scoreboard objectives add fnw.chop_bamboo minecraft.mined:minecraft.bamboo
 
 # ===== EXCAVATE =====
 # Excavate Leveling
