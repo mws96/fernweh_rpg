@@ -22,6 +22,6 @@
     }
   },
   "rewards": {
-    "function": "fernweh:currency/give_cube"
+    "function": "fernweh:skills/hunter/give_trophy"
   }
 }

@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "fernweh:currency/give_cube"
+    "function": "fernweh:skills/lumber/give_trophy"
   }
 }
