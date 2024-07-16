@@ -47,7 +47,7 @@ dig_blocks = {
 
 hostile_mobs = {
   'blaze': [
-    { 'drop_rate': 0.04, 'drop_item': 'blaze_rod' }
+    { 'drop_rate': 0.01, 'drop_item': 'blaze_rod' }
   ],
   'bogged': [
     { 'drop_rate': 0.03, 'drop_item': 'brown_mushroom' },
@@ -71,7 +71,7 @@ hostile_mobs = {
     { 'drop_rate': 0.04, 'drop_item': 'sponge' }
   ],
   'enderman': [
-    { 'drop_rate': 0.01, 'drop_item': 'ender_chest' }
+    { 'drop_rate': 0.002, 'drop_item': 'ender_chest' }
   ],
   'evoker': [
     { 'drop_rate': 0.05, 'drop_item': 'emerald' }
@@ -139,7 +139,7 @@ hostile_mobs = {
     { 'drop_rate': 0.01, 'drop_item': 'wither_rose' }
   ],
   'wither_skeleton': [
-    { 'drop_rate': 0.005, 'drop_item': 'wither_skeleton_skull' }
+    { 'drop_rate': 0.001, 'drop_item': 'wither_skeleton_skull' }
   ],
   'warden': [
     { 'drop_rate': 0.5, 'drop_item': 'deepslate' }
