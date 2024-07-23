@@ -26,28 +26,41 @@
               }
             }
           }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": {
+            "type": "score",
+            "target": {
+              "type": "context",
+              "target": "this"
+            },
+            "score": "fnw.mining_level",
+            "scale": 0.01
+          }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.4
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
+          "functions": [
             {
-              "condition": "minecraft:random_chance",
-              "chance": 0.05
+              "add": false,
+              "count": {
+                "min": 1,
+                "max": 2
+              },
+              "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:raw_gold"
         }
       ],
-      "rolls": {
-        "type": "score",
-        "target": {
-          "type": "context",
-          "target": "this"
-        },
-        "score": "fnw.mining_level"
-      }
+      "rolls": 1
     }
   ],
   "random_sequence": "minecraft:blocks/gold_ore"
