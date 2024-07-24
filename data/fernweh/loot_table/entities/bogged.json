@@ -14,10 +14,6 @@
             "score": "fnw.slayer_level",
             "scale": 0.01
           }
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.3
         }
       ],
       "entries": [
@@ -27,7 +23,7 @@
             {
               "add": false,
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 2
               },
               "function": "minecraft:set_count"
@@ -66,10 +62,6 @@
             "score": "fnw.slayer_level",
             "scale": 0.01
           }
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.3
         }
       ],
       "entries": [
@@ -79,7 +71,7 @@
             {
               "add": false,
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 2
               },
               "function": "minecraft:set_count"
@@ -118,10 +110,6 @@
             "score": "fnw.slayer_level",
             "scale": 0.01
           }
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.05
         }
       ],
       "entries": [
@@ -131,7 +119,7 @@
             {
               "add": false,
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 2
               },
               "function": "minecraft:set_count"

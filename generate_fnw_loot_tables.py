@@ -231,12 +231,12 @@ friendly_mobs = {
 
 gameplay_drops = {
   'fishing': [
-    { 'drop_rate': 0.03, 'drop_item': 'enchanted_golden_apple' },
-    { 'drop_rate': 0.05, 'drop_item': 'deepslate_emerald_ore' },
-    { 'drop_rate': 0.001, 'drop_item': 'elytra' },
-    { 'drop_rate': 0.001, 'drop_item': 'nether_star' },
-    { 'drop_rate': 0.001, 'drop_item': 'totem_of_undying' },
-    { 'drop_rate': 0.2, 'drop_item': 'wet_sponge', 'max_items': 3 },
+    { 'drop_rate': 0.06, 'drop_item': 'enchanted_golden_apple' },
+    { 'drop_rate': 0.1, 'drop_item': 'deepslate_emerald_ore' },
+    { 'drop_rate': 0.002, 'drop_item': 'elytra' },
+    { 'drop_rate': 0.002, 'drop_item': 'nether_star' },
+    { 'drop_rate': 0.002, 'drop_item': 'totem_of_undying' },
+    { 'drop_rate': 0.4, 'drop_item': 'wet_sponge', 'max_items': 3 },
   ],
 }
 
@@ -289,10 +289,6 @@ def generate_block_loot_tables(block_map, skill_name, tool_tag):
                 "score": f"fnw.{skill_name}",
                 "scale": 0.01
               }
-            },
-            {
-              "condition": "minecraft:random_chance",
-              "chance": drop_rate
             }
           ],
           "entries": [
@@ -302,7 +298,7 @@ def generate_block_loot_tables(block_map, skill_name, tool_tag):
                 {
                   "add": False,
                   "count": {
-                    "min": 1,
+                    "min": 0,
                     "max": max_items
                   },
                   "function": "minecraft:set_count"
@@ -348,10 +344,6 @@ def generate_entity_loot_tables(entity_map, skill_name):
               "score": f"fnw.{skill_name}",
               "scale": 0.01
             }
-          },
-          {
-            "condition": "minecraft:random_chance",
-            "chance": drop_rate
           }
         ],
         "entries": [
@@ -361,7 +353,7 @@ def generate_entity_loot_tables(entity_map, skill_name):
               {
                 "add": False,
                 "count": {
-                  "min": 1,
+                  "min": 0,
                   "max": max_items
                 },
                 "function": "minecraft:set_count"
